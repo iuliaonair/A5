@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+
+		<!-- Text field -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="myTextarea" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<!-- Fancify field set -->
+		<fieldset>
+			<legend>Fancify</legend>
+			<button onclick="handleButtonClick()">Bigger!</button>
+			<label>
+				<input type="radio" id="fancyRadio" name="fanciness" value="fancy" onchange="handleRadioChange()">
+				FancyShmancy
+			</label>
+			<label>
+				<input type="radio" id="boringRadio" name="fanciness" value="boring" onchange="handleRadioChange()">
+				BoringBetty
+			</label>
+		</fieldset>
+
+		<!-- Moo button -->
+		<button onclick="capitalizeAndAddMoo()">Moo</button>
+	</body>
+</html>
